@@ -142,7 +142,7 @@ abstract class NotificationSDK
     }
 
     protected function getJson($path){
-        return json_decode(file_get_contents($path));
+        return json_decode(file_get_contents($path),true);
     }
 
 
