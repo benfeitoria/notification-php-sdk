@@ -3,7 +3,7 @@
     "description": "A php sdk to correctly use benfeitoria-notification",
     "type": "library",
     "require": {
-        "php" : ">=7.1.0",
+        "php" : "^7.2",
         "guzzlehttp/guzzle": "^6.3",
         "ext-json": "*"
     },
