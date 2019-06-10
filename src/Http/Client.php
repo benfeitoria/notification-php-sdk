@@ -27,7 +27,7 @@ class Client extends \GuzzleHttp\Client
 
     public function request($method, $uri = '', array $options = [])
     {
-        return parent::request($method, $this->endpoint."/".$uri, $options);
+        return parent::request($method, $this->endpoint.$uri, $options);
     }
 
     public function post($uri, array $options = [])
@@ -41,6 +41,6 @@ class Client extends \GuzzleHttp\Client
     }
 
     public function redirect($uri){
-        return $this->endpoint."/".$uri;
+        return $this->endpoint.$uri;
     }
 }
