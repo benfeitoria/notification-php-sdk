@@ -23,16 +23,17 @@ abstract class NotificationSDK
 
     /**
      * NotificationSDK constructor.
+     * @param $endpoint
      * @param $tokenPath
      * @param $authCode
      * @param $clientId
      * @param $clientSecret
      * @param $redirectUri
      */
-    public function __construct($tokenPath, $authCode, $clientId, $clientSecret, $redirectUri)
+    public function __construct($endpoint,$tokenPath, $authCode, $clientId, $clientSecret, $redirectUri)
     {
         $this->oauth = new NotificationOAuth($tokenPath,$authCode,$clientId,$clientSecret,$redirectUri);
-        $this->http = new Client();
+        $this->http = new Client($endpoint);
     }
 
     /**

@@ -13,11 +13,21 @@ use Psr\Http\Message\UriInterface;
 
 class Client extends \GuzzleHttp\Client
 {
-    const API_ENDPOINT = "https://notification.benfeitoria.com";
+    private $endpoint;
+
+    /**
+     * Client constructor.
+     * @param $endpoint
+     */
+    public function __construct($endpoint)
+    {
+        parent::__construct([]);
+        $this->endpoint = $endpoint;
+    }
 
     public function request($method, $uri = '', array $options = [])
     {
-        return parent::request($method, self::API_ENDPOINT."/".$uri, $options);
+        return parent::request($method, $this->endpoint."/".$uri, $options);
     }
 
     public function post($uri, array $options = [])
@@ -31,6 +41,6 @@ class Client extends \GuzzleHttp\Client
     }
 
     public function redirect($uri){
-        return self::API_ENDPOINT."/".$uri;
+        return $this->endpoint."/".$uri;
     }
 }
