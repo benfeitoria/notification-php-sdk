@@ -125,7 +125,7 @@ abstract class NotificationSDK
         return $response_data['access_token'];
     }
 
-    protected function authenticate(){
+    public function authenticate(){
         $query = http_build_query([
             'client_id' => $this->oauth->getClientId(),
             'redirect_uri' => $this->oauth->getRedirectUri(),
@@ -143,5 +143,32 @@ abstract class NotificationSDK
 
     protected function getJson($path){
         return json_decode(file_get_contents($path));
+    }
+
+
+    /**
+     * @return mixed
+     * @throws NotAuthorizedException
+     */
+    public function user(){
+        $token = $this->getAccessToken();
+        while (true) {
+            try {
+                $response = $this->http->get("/api/user", [
+                    'headers' => [
+                        'Accept' => 'application/json',
+                        'Authorization' => "Bearer " . $token
+                    ]
+                ]);
+
+                return json_decode($response->getBody(),true);
+            } catch (ClientException $exception) {
+                if($exception->getCode() == 401){
+                    $token = $this->refreshAccessToken();
+                }else{
+                    throw new NotAuthorizedException($exception->getMessage(),$exception->getCode(),$exception);
+                }
+            }
+        }
     }
 }
