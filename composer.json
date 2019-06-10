@@ -2,6 +2,7 @@
     "name": "benfeitoria/notification-php-sdk",
     "description": "A php sdk to correctly use benfeitoria-notification",
     "type": "library",
+    "license": "MIT",
     "require": {
         "php" : "^7.2",
         "guzzlehttp/guzzle": "^6.3",
