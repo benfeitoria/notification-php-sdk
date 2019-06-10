@@ -7,6 +7,11 @@
         "guzzlehttp/guzzle": "^6.3",
         "ext-json": "*"
     },
+    "autoload": {
+        "psr-4": {
+            "Benfeitoria\\Notification\\": "src/"
+        }
+    },
     "authors": [
         {
             "name": "Jorge Junior",
