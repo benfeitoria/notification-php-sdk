@@ -12,4 +12,18 @@ class SubscriptionOverdue extends BaseNotification
     {
         return "subscription/status-updated-overdue";
     }
+
+    public function getRequiredFields(): array
+    {
+        return [
+            "realizador_nome",
+            "realizador_email",
+            "projeto_nome",
+            "projeto_url",
+            "colaborador_nome",
+            "colaborador_email",
+            "assinatura_codigo",
+            "assinatura_valor"
+        ];
+    }
 }
