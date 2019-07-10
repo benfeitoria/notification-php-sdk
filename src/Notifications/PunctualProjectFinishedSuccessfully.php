@@ -17,7 +17,7 @@ class PunctualProjectFinishedSuccessfully extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "project/pontual/finished-successfully";
+        return "project/punctual/finished-successfully";
     }
 
     /**
