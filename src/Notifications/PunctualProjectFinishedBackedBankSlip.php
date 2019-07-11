@@ -9,16 +9,16 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class PunctualProjectFinishedSuccessfully extends BaseNotification
+class PunctualProjectFinishedBackedBankSlip extends BaseNotification
 {
-    public $description = "E-mail 34 - Disparado para todos os colaboradores quando a campanha é bem sucedida.";
+    public $description = "E-mail 32 - Disparado para colaborações de campanha sem sucesso (status 17) para quem colaborou via boleto.";
 
     /**
      * @return string
      */
     public function getNotification(): string
     {
-        return "project/punctual/finished-successfully";
+        return "project/punctual/finished-backed/bank-slip";
     }
 
     /**
@@ -31,7 +31,8 @@ class PunctualProjectFinishedSuccessfully extends BaseNotification
             "colaborador_email",
             "projeto_nome",
             "projeto_url",
-            "projeto_benfeitores",
+            "contribuicao_valor",
+            "estorno_url",
             "realizador_email"
         ];
     }
