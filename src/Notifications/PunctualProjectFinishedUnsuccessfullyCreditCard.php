@@ -11,6 +11,7 @@ namespace Benfeitoria\Notification\Notifications;
 
 class PunctualProjectFinishedUnsuccessfullyCreditCard extends BaseNotification
 {
+    public $description = "E-mail 33 - Disparado para colaborações de campanha sem sucesso (status 17) para quem colaborou via cartão.";
 
     /**
      * @return string

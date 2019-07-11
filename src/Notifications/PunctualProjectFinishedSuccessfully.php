@@ -11,6 +11,7 @@ namespace Benfeitoria\Notification\Notifications;
 
 class PunctualProjectFinishedSuccessfully extends BaseNotification
 {
+    public $description = "E-mail 34 - Disparado para todos os colaboradores quando a campanha é bem sucedida.";
 
     /**
      * @return string

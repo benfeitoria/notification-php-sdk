@@ -11,6 +11,7 @@ namespace Benfeitoria\Notification\Notifications;
 
 class PunctualProjectFinishedBackedBankSlip extends BaseNotification
 {
+    public $description = "E-mail 32 - Disparado para colaborações de campanha sem sucesso (status 17) para quem colaborou via boleto.";
 
     /**
      * @return string
