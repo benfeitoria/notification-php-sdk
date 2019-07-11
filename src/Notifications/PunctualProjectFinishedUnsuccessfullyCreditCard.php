@@ -9,7 +9,7 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class PunctualProjectFinishedSuccessfully extends BaseNotification
+class PunctualProjectFinishedUnsuccessfullyCreditCard extends BaseNotification
 {
 
     /**
@@ -17,7 +17,7 @@ class PunctualProjectFinishedSuccessfully extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "project/punctual/finished-successfully";
+        return "project/punctual/finished-unsuccessfully/credit-card";
     }
 
     /**
@@ -30,7 +30,7 @@ class PunctualProjectFinishedSuccessfully extends BaseNotification
             "colaborador_email",
             "projeto_nome",
             "projeto_url",
-            "projeto_benfeitores",
+            "contribuicao_valor",
             "realizador_email"
         ];
     }
