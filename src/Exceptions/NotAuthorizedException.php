@@ -6,7 +6,7 @@
  * Time: 14:14
  */
 
-namespace Benfeitoria\Exceptions;
+namespace Benfeitoria\Notification\Exceptions;
 
 
 use Throwable;
