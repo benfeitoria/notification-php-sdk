@@ -9,7 +9,7 @@
 namespace Benfeitoria\Notification;
 
 
-use Benfeitoria\Exceptions\NotAuthorizedException;
+use Benfeitoria\Notification\Exceptions\NotAuthorizedException;
 use Benfeitoria\Notification\Contracts\Notification;
 use Benfeitoria\Notification\Http\Client;
 use GuzzleHttp\Exception\ClientException;
