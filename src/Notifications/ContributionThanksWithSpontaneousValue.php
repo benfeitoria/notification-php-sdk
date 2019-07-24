@@ -27,6 +27,7 @@ class ContributionThanksWithSpontaneousValue extends BaseNotification
             "projeto_nome",
             "projeto_url",
             "projeto_data_encerramento",
+            "projeto_primeira_meta",
             "colaboracao_valor",
             "colaboracao_espontanea_valor",
             "realizador_email"
