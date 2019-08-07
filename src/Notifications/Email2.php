@@ -9,16 +9,16 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class RecurrentProjectUpdatedFirstTime extends BaseNotification
+class Email2 extends BaseNotification
 {
 
-    public $description = "E-mail 37 - Enviado quando a realizadora edita a campanha pela primeira vez";
+    public $description = "E-mail 2 - Primeira edição de campanha.";
     /**
      * @return string
      */
     public function getNotification(): string
     {
-        return "project/recurrent/updated-first-time";
+        return "project/punctual/updated-first-time";
     }
 
     /**
@@ -28,7 +28,11 @@ class RecurrentProjectUpdatedFirstTime extends BaseNotification
     {
         return [
             "realizador_nome",
-            "realizador_email"
+            "realizador_email",
+            "meta1",
+            "meta1sobre5",
+            "meta1sobre100",
+            "meta1sobre100vezes80"
         ];
     }
 }

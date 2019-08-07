@@ -4,7 +4,7 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class SubscriptionOverdue extends BaseNotification
+class Email46 extends BaseNotification
 {
     public $description = "E-mail 46 -  Assinatura atrasada";
 

@@ -9,16 +9,16 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class ContributionBankSlipNotPaidAfter3Days extends BaseNotification
+class Email33 extends BaseNotification
 {
-    public $description = "E-mail 31 - Disparado 03 dias após a geração do boleto SE o pagamento não foi identificado.";
+    public $description = "E-mail 33 - Disparado para colaborações de campanha sem sucesso (status 17) para quem colaborou via cartão.";
 
     /**
      * @return string
      */
     public function getNotification(): string
     {
-        return "contribution/bank-slip/not-paid-after-3-days";
+        return "project/punctual/finished-unsuccessfully/credit-card";
     }
 
     /**
@@ -31,7 +31,8 @@ class ContributionBankSlipNotPaidAfter3Days extends BaseNotification
             "colaborador_email",
             "projeto_nome",
             "projeto_url",
-            "boleto_url"
+            "contribuicao_valor",
+            "realizador_email"
         ];
     }
 }
