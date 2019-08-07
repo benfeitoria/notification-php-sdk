@@ -4,16 +4,16 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class ContributionThanksWithSpontaneousValue extends BaseNotification
+class Email30_2 extends BaseNotification
 {
-    public $description = "E-mail 30-1 - E-mail a ser disparado se a pessoa colaborou com a Benfeitoria.";
+    public $description = "E-mail 30-2 - E-mail a ser disparado se a pessoa não colaborou com a Benfeitoria.";
 
     /**
      * @return string
      */
     public function getNotification(): string
     {
-        return "contribution/thanks/with-ce";
+        return "contribution/thanks/without-ce";
     }
 
     /**
@@ -28,7 +28,6 @@ class ContributionThanksWithSpontaneousValue extends BaseNotification
             "projeto_url",
             "projeto_data_encerramento",
             "colaboracao_valor",
-            "colaboracao_espontanea_valor",
             "realizador_email"
         ];
     }

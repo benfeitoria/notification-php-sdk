@@ -4,7 +4,7 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class SubscriptionSuspended extends BaseNotification
+class Email47 extends BaseNotification
 {
     public $description = "E-mail 47 -  Assinatura fica suspensa/Não pago";
 

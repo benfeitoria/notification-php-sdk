@@ -1,24 +1,19 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: j
- * Date: 10/07/19
- * Time: 15:11
- */
+
 
 namespace Benfeitoria\Notification\Notifications;
 
 
-class PunctualProjectFinishedUnsuccessfullyCreditCard extends BaseNotification
+class Email30_1 extends BaseNotification
 {
-    public $description = "E-mail 33 - Disparado para colaborações de campanha sem sucesso (status 17) para quem colaborou via cartão.";
+    public $description = "E-mail 30-1 - E-mail a ser disparado se a pessoa colaborou com a Benfeitoria.";
 
     /**
      * @return string
      */
     public function getNotification(): string
     {
-        return "project/punctual/finished-unsuccessfully/credit-card";
+        return "contribution/thanks/with-ce";
     }
 
     /**
@@ -31,7 +26,9 @@ class PunctualProjectFinishedUnsuccessfullyCreditCard extends BaseNotification
             "colaborador_email",
             "projeto_nome",
             "projeto_url",
-            "contribuicao_valor",
+            "projeto_data_encerramento",
+            "colaboracao_valor",
+            "colaboracao_espontanea_valor",
             "realizador_email"
         ];
     }
