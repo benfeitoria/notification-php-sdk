@@ -9,16 +9,16 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class PunctualProjectFinishedBackedBankSlip extends BaseNotification
+class Email31 extends BaseNotification
 {
-    public $description = "E-mail 32 - Disparado para colaborações de campanha sem sucesso (status 17) para quem colaborou via boleto.";
+    public $description = "E-mail 31 - Disparado 03 dias após a geração do boleto SE o pagamento não foi identificado.";
 
     /**
      * @return string
      */
     public function getNotification(): string
     {
-        return "project/punctual/finished-backed/bank-slip";
+        return "contribution/bank-slip/not-paid-after-3-days";
     }
 
     /**
@@ -31,9 +31,7 @@ class PunctualProjectFinishedBackedBankSlip extends BaseNotification
             "colaborador_email",
             "projeto_nome",
             "projeto_url",
-            "contribuicao_valor",
-            "estorno_url",
-            "realizador_email"
+            "boleto_url"
         ];
     }
 }

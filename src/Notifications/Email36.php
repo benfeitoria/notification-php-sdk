@@ -9,7 +9,7 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class RecurrentProjectCreated extends BaseNotification
+class Email36 extends BaseNotification
 {
     public $description = "E-mail 36 - Enviado como confirmação de cadastro de novo projeto na plataforma.";
     /**
