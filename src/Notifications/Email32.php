@@ -9,16 +9,16 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class ContributionBankSlipCreated extends BaseNotification
+class Email32 extends BaseNotification
 {
-    public $description = "E-mail 29 - Disparado quando o colaborador gera um boleto para colaborar";
+    public $description = "E-mail 32 - Disparado para colaborações de campanha sem sucesso (status 17) para quem colaborou via boleto.";
 
     /**
      * @return string
      */
     public function getNotification(): string
     {
-        return "contribution/bank-slip/created";
+        return "project/punctual/finished-backed/bank-slip";
     }
 
     /**
@@ -31,7 +31,9 @@ class ContributionBankSlipCreated extends BaseNotification
             "colaborador_email",
             "projeto_nome",
             "projeto_url",
-            "boleto_url"
+            "contribuicao_valor",
+            "estorno_url",
+            "realizador_email"
         ];
     }
 }

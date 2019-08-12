@@ -4,7 +4,7 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class ContributionThanksWithSpontaneousValue extends BaseNotification
+class Email30_1 extends BaseNotification
 {
     public $description = "E-mail 30-1 - E-mail a ser disparado se a pessoa colaborou com a Benfeitoria.";
 

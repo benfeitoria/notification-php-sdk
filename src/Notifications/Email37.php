@@ -3,21 +3,22 @@
  * Created by PhpStorm.
  * User: j
  * Date: 10/07/19
- * Time: 14:59
+ * Time: 14:49
  */
 
 namespace Benfeitoria\Notification\Notifications;
 
 
-class PunctualProjectCreated extends BaseNotification
+class Email37 extends BaseNotification
 {
-    public $description = "E-mail 1 - Confirmação de cadastro de novo projeto.";
+
+    public $description = "E-mail 37 - Enviado quando a realizadora edita a campanha pela primeira vez";
     /**
      * @return string
      */
     public function getNotification(): string
     {
-        return "project/punctual/created";
+        return "project/recurrent/updated-first-time";
     }
 
     /**

@@ -1,19 +1,24 @@
 <?php
-
+/**
+ * Created by PhpStorm.
+ * User: j
+ * Date: 10/07/19
+ * Time: 15:11
+ */
 
 namespace Benfeitoria\Notification\Notifications;
 
 
-class ContributionThanksWithoutSpontaneousValue extends BaseNotification
+class Email34 extends BaseNotification
 {
-    public $description = "E-mail 30-2 - E-mail a ser disparado se a pessoa não colaborou com a Benfeitoria.";
+    public $description = "E-mail 34 - Disparado para todos os colaboradores quando a campanha é bem sucedida.";
 
     /**
      * @return string
      */
     public function getNotification(): string
     {
-        return "contribution/thanks/without-ce";
+        return "project/punctual/finished-successfully";
     }
 
     /**
@@ -26,9 +31,7 @@ class ContributionThanksWithoutSpontaneousValue extends BaseNotification
             "colaborador_email",
             "projeto_nome",
             "projeto_url",
-            "projeto_data_encerramento",
-            "projeto_primeira_meta",
-            "colaboracao_valor",
+            "projeto_benfeitores",
             "realizador_email"
         ];
     }
