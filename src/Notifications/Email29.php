@@ -27,11 +27,11 @@ class Email29 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
-            "colaborador_nome",
-            "colaborador_email",
-            "projeto_nome",
-            "projeto_url",
-            "boleto_url"
+            "contributor_nome",
+            "contributor_email",
+            "projects_title",
+            "projects_short_url",
+            "bank_slip_url"
         ];
     }
 }

@@ -27,8 +27,8 @@ class Email37 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
-            "realizador_nome",
-            "realizador_email"
+            "owner_name",
+            "owner_email"
         ];
     }
 }
