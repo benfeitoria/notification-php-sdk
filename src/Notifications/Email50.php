@@ -19,6 +19,7 @@ class Email50 extends BaseNotification
             "owner_name",
             "owner_email",
             "projects_title",
+            "projects_short_url",
             "subscriber_name",
             "subscriber_email",
             "subscriptions_subscription_code",
