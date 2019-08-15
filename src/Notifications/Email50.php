@@ -19,11 +19,10 @@ class Email50 extends BaseNotification
             "owner_name",
             "owner_email",
             "projects_title",
-            "projeto_url",
-            "colaborador_nome",
-            "colaborador_email",
-            "assinatura_codigo",
-            "assinatura_valor"
+            "subscriber_name",
+            "subscriber_email",
+            "subscriptions_subscription_code",
+            "subscriptions_value_contribution"
         ];
     }
 }

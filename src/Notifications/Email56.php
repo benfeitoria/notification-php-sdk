@@ -16,14 +16,10 @@ class Email56 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
-            "realizador_nome",
-            "realizador_email",
-            "projeto_nome",
-            "projeto_url",
-            "colaborador_nome",
-            "colaborador_email",
-            "assinatura_codigo",
-            "assinatura_valor"
+            "projects_title",
+            "projects_short_url",
+            "subscriber_name",
+            "subscriber_email"
         ];
     }
 }
