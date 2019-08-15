@@ -16,14 +16,14 @@ class Email47 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
-            "realizador_nome",
-            "realizador_email",
-            "projeto_nome",
-            "projeto_url",
-            "colaborador_nome",
-            "colaborador_email",
-            "assinatura_codigo",
-            "assinatura_valor"
+            "owner_name",
+            "owner_email",
+            "projects_title",
+            "projects_short_url",
+            "subscriber_name",
+            "subscriber_email",
+            "subscriptions_subscription_code",
+            "subscriptions_value_contribution"
         ];
     }
 }
