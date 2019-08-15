@@ -17,7 +17,7 @@ class Email1 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "project/punctual/created";
+        return "email/1";
     }
 
     /**
@@ -26,8 +26,8 @@ class Email1 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
-            "realizador_nome",
-            "realizador_email"
+            "owner_name",
+            "owner_email"
         ];
     }
 }

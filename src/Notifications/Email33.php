@@ -18,7 +18,7 @@ class Email33 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "project/punctual/finished-unsuccessfully/credit-card";
+        return "email/33";
     }
 
     /**
@@ -27,12 +27,12 @@ class Email33 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
-            "colaborador_nome",
-            "colaborador_email",
-            "projeto_nome",
-            "projeto_url",
-            "contribuicao_valor",
-            "realizador_email"
+            "contributor_name",
+            "contributor_email",
+            "projects_title",
+            "projects_short_url",
+            "contributions_value",
+            "owner_email"
         ];
     }
 }

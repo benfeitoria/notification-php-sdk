@@ -13,7 +13,7 @@ class Email30_1 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "contribution/thanks/with-ce";
+        return "email/30_1";
     }
 
     /**
@@ -22,15 +22,14 @@ class Email30_1 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
-            "colaborador_nome",
-            "colaborador_email",
-            "projeto_nome",
-            "projeto_url",
-            "projeto_data_encerramento",
-            "projeto_primeira_meta",
-            "colaboracao_valor",
-            "colaboracao_espontanea_valor",
-            "realizador_email"
+            "contributor_nome",
+            "contributor_email",
+            "projects_title",
+            "projects_short_url",
+            "projects_dt_end",
+            "contributions_value",
+            "contributions_value_benfeitoria",
+            "owner_email"
         ];
     }
 }

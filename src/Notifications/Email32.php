@@ -18,7 +18,7 @@ class Email32 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "project/punctual/finished-backed/bank-slip";
+        return "email/32";
     }
 
     /**
@@ -27,13 +27,13 @@ class Email32 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
-            "colaborador_nome",
-            "colaborador_email",
-            "projeto_nome",
-            "projeto_url",
-            "contribuicao_valor",
-            "estorno_url",
-            "realizador_email"
+            "contributor_name",
+            "contributor_email",
+            "projects_title",
+            "projects_short_url",
+            "contributions_value",
+            "refund_bank_slip_form_url",
+            "owner_email"
         ];
     }
 }

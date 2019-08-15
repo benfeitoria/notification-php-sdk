@@ -18,7 +18,7 @@ class Email34 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "project/punctual/finished-successfully";
+        return "email/34";
     }
 
     /**
@@ -27,12 +27,12 @@ class Email34 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
-            "colaborador_nome",
-            "colaborador_email",
-            "projeto_nome",
-            "projeto_url",
-            "projeto_benfeitores",
-            "realizador_email"
+            "contributor_name",
+            "contributor_email",
+            "projects_title",
+            "projects_short_url",
+            "projects_count_contributors",
+            "owner_email"
         ];
     }
 }

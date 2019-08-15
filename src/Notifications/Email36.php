@@ -17,7 +17,7 @@ class Email36 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "project/recurrent/created";
+        return "email/36";
     }
 
     /**
@@ -26,8 +26,8 @@ class Email36 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
-            "realizador_nome",
-            "realizador_email"
+            "owner_name",
+            "owner_email"
         ];
     }
 }

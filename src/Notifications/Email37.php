@@ -18,7 +18,7 @@ class Email37 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "project/recurrent/updated-first-time";
+        return "email/37";
     }
 
     /**
@@ -27,8 +27,8 @@ class Email37 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
-            "realizador_nome",
-            "realizador_email"
+            "owner_name",
+            "owner_email"
         ];
     }
 }
