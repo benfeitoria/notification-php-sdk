@@ -22,13 +22,13 @@ class Email30_2 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
-            "colaborador_nome",
-            "colaborador_email",
-            "projeto_nome",
-            "projeto_url",
-            "projeto_data_encerramento",
-            "colaboracao_valor",
-            "realizador_email"
+            "contributor_name",
+            "contributor_email",
+            "projects_title",
+            "projects_short_url",
+            "projects_dt_end",
+            "contributions_value",
+            "owner_email"
         ];
     }
 }
