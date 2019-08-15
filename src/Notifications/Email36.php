@@ -17,7 +17,7 @@ class Email36 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "project/recurrent/created";
+        return "email/36";
     }
 
     /**

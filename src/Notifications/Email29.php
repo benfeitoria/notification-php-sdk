@@ -18,7 +18,7 @@ class Email29 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "contribution/bank-slip/created";
+        return "email/29";
     }
 
     /**

@@ -18,7 +18,7 @@ class Email33 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "project/punctual/finished-unsuccessfully/credit-card";
+        return "email/33";
     }
 
     /**

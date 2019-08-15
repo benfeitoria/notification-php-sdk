@@ -18,7 +18,7 @@ class Email31 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "contribution/bank-slip/not-paid-after-3-days";
+        return "email/31";
     }
 
     /**

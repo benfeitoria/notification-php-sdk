@@ -18,7 +18,7 @@ class Email2 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "project/punctual/updated-first-time";
+        return "email/2";
     }
 
     /**

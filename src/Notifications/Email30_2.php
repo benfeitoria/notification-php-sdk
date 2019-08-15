@@ -13,7 +13,7 @@ class Email30_2 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "contribution/thanks/without-ce";
+        return "email/30_2";
     }
 
     /**

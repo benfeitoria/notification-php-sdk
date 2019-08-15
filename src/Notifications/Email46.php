@@ -10,7 +10,7 @@ class Email46 extends BaseNotification
 
     public function getNotification(): string
     {
-        return "subscription/status-updated-overdue";
+        return "email/46";
     }
 
     public function getRequiredFields(): array

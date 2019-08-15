@@ -18,7 +18,7 @@ class Email37 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "project/recurrent/updated-first-time";
+        return "email/37";
     }
 
     /**
