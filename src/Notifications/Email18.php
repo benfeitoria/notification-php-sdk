@@ -2,23 +2,22 @@
 /**
  * Created by PhpStorm.
  * User: j
- * Date: 10/07/19
- * Time: 14:49
+ * Date: 15/08/19
+ * Time: 14:53
  */
 
 namespace Benfeitoria\Notification\Notifications;
 
 
-class Email2 extends BaseNotification
+class Email18
 {
-
-    public $description = "E-mail 2 - Primeira edição de campanha.";
+    public $description = "E-mail 18 - Enviado para o time de consultoria quando recebemos uma nova proposta cadastrada.";
     /**
      * @return string
      */
     public function getNotification(): string
     {
-        return "email/2";
+        return "email/18";
     }
 
     /**
@@ -29,10 +28,9 @@ class Email2 extends BaseNotification
         return [
             "owner_name",
             "owner_email",
-            "goals_min_reference",
-            "goals_min_reference_over_5",
-            "goals_min_reference_over_100",
-            "goals_min_reference_over_100_times_80"
+            "projects_title",
+            "projects_short_url"
         ];
     }
+
 }

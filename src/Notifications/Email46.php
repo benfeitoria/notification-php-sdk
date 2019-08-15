@@ -16,7 +16,7 @@ class Email46 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
-            "owner_nome",
+            "owner_name",
             "owner_email",
             "projects_title",
             "projects_short_url",
