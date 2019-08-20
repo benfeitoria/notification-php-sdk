@@ -27,7 +27,7 @@ class Email29 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
-            "contributor_nome",
+            "contributor_name",
             "contributor_email",
             "projects_title",
             "projects_short_url",
