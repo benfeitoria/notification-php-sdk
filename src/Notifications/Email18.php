@@ -28,8 +28,7 @@ class Email18
         return [
             "owner_name",
             "owner_email",
-            "projects_title",
-            "projects_short_url"
+            "projects_title"
         ];
     }
 
