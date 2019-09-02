@@ -9,7 +9,7 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class Email18
+class Email18 extends BaseNotification
 {
     public $description = "E-mail 18 - Enviado para o time de consultoria quando recebemos uma nova proposta cadastrada.";
     /**

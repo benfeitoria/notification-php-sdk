@@ -9,7 +9,7 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class Email20
+class Email20 extends BaseNotification
 {
     public $description = "E-mail 20 - Campanha foi publicada.";
     /**
