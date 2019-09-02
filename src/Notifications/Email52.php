@@ -9,7 +9,7 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class Email52
+class Email52 extends BaseNotification
 {
     public $description = "E-mail 52 - Enviado para o time de consultoria toda vez que o projeto entra no status 12.";
     /**
