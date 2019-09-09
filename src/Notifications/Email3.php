@@ -30,7 +30,8 @@ class Email3 extends BaseNotification
             "owner_name",
             "owner_email",
             "projects_title",
-            "projects_short_url"
+            "projects_short_url",
+            "projects_edit_url"
         ];
     }
 }
