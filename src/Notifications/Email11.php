@@ -23,7 +23,7 @@ class Email11 extends BaseNotification
             "owner_name",
             "owner_email",
             "projects_title",
-            "projects_captation_days",
+            "projects_total_collected",
             "projects_percentage_collected_of_first_goal"
         ];
     }
