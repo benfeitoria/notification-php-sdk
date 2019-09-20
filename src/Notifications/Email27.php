@@ -22,7 +22,8 @@ class Email27 extends BaseNotification
         return [
             "owner_email",
             "projects_title",
-            "consultant_name"
+            "consultant_name",
+            "consultant_email"
         ];
     }
 }
