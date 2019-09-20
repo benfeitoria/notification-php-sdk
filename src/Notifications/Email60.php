@@ -17,8 +17,8 @@ class Email60 extends BaseNotification
         return [
             "projects_title",
             "projects_short_url",
-            "users_name",
-            "users_emails"
+            "contributor_name",
+            "contributor_emails"
         ];
     }
 }

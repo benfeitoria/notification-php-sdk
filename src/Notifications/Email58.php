@@ -16,8 +16,8 @@ class Email58 extends BaseNotification
         return [
             "projects_title",
             "projects_short_url",
-            "users_name",
-            "users_email"
+            "subscriber_name",
+            "subscriber_email"
         ];
     }
 }
