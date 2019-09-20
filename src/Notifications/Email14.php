@@ -25,7 +25,7 @@ class Email14 extends BaseNotification
             "projects_title",
             "projects_total_collected",
             "projects_percentage_collected_of_first_goal",
-            "projects_benefactors",
+            "projects_count_contributors",
             "projects_payw",
             "projects_total_collected_times_projects_payw",
             "projects_total_collected_times_tax_value",
