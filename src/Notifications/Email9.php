@@ -29,8 +29,9 @@ class Email9 extends BaseNotification
             "owner_name",
             "owner_email",
             "projects_title",
-            "projects_short_url",
-            "projects_percentage_collected_of_first_goal"
+            "projects_captation_days",
+            "projects_percentage_collected_of_first_goal",
+            "projects_total_collected"
         ];
     }
 }

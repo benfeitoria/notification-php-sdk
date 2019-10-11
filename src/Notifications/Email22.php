@@ -23,8 +23,7 @@ class Email22 extends BaseNotification
             "owner_email",
             "projects_title",
             "projects_percentage_collected_of_first_goal",
-            "consultant_name",
-            "cunsultant_email"
+            "consultant_name"
         ];
     }
 }
