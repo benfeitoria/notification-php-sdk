@@ -21,9 +21,12 @@ abstract class NotificationSDK
 
     private $http;
 
+    private $environment;
+
 
     /**
      * NotificationSDK constructor.
+     * @param $environment
      * @param $endpoint
      * @param $tokenPath
      * @param $authCode
@@ -31,10 +34,11 @@ abstract class NotificationSDK
      * @param $clientSecret
      * @param $redirectUri
      */
-    public function __construct($endpoint,$tokenPath, $authCode, $clientId, $clientSecret, $redirectUri)
+    public function __construct($environment,$endpoint,$tokenPath, $authCode, $clientId, $clientSecret, $redirectUri)
     {
         $this->oauth = new NotificationOAuth($tokenPath,$authCode,$clientId,$clientSecret,$redirectUri);
         $this->http = new Client($endpoint);
+        $this->environment = $environment;
     }
 
     /**
@@ -74,13 +78,14 @@ abstract class NotificationSDK
                 try {
                     $response = $this->http->post("/api/notify", [
                         'form_params' => [
+                            'environment' => $this->environment,
                             'notification' => $notification->getNotification(),
                             'notification_data' => $notification->getData()
                         ],
                         'headers' => [
                             'Accept' => 'application/json',
                             'Authorization' => "Bearer " . $token
-                        ]
+                         ]
                     ]);
 
                     return json_decode($response->getBody(), true);

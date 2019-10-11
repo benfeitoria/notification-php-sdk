@@ -29,9 +29,7 @@ class Email51 extends BaseNotification
             "owner_name",
             "owner_email",
             "projects_title",
-            "projects_short_url",
-            "consultant_name",
-            "consultant_email",
+            "projects_short_url"
         ];
     }
 

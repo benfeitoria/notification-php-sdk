@@ -26,6 +26,7 @@ class Email30_1 extends BaseNotification
             "contributor_email",
             "projects_title",
             "projects_short_url",
+            "goals_current_reference",
             "projects_dt_end",
             "contributions_value",
             "contributions_value_benfeitoria",
