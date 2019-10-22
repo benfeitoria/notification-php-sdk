@@ -100,6 +100,39 @@ abstract class NotificationSDK
         }
     }
 
+    /**
+     * @param Notification $notification
+     * @param $recipient
+     * @return mixed
+     * @throws NotAuthorizedException
+     */
+    public function checkIfSent(Notification $notification, $recipient){
+        $token = $this->getAccessToken();
+        while (true) {
+            try {
+                $response = $this->http->post("/api/check-if-sent", [
+                    'form_params' => [
+                        'environment' => $this->environment,
+                        'notification' => $notification->getNotification(),
+                        'recipient' => $recipient
+                    ],
+                    'headers' => [
+                        'Accept' => 'application/json',
+                        'Authorization' => "Bearer " . $token
+                    ]
+                ]);
+
+                return json_decode($response->getBody(), true);
+            } catch (ClientException $exception) {
+                if ($exception->getCode() == 401) {
+                    $token = $this->refreshAccessToken();
+                } else {
+                    throw new NotAuthorizedException($exception->getMessage(), $exception->getCode(), $exception);
+                }
+            }
+        }
+    }
+
     protected function getAccessToken(){
         $tokenPath = $this->oauth->getTokenPath();
         $authCode = $this->oauth->getAuthCode();
