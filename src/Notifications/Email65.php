@@ -6,7 +6,7 @@ namespace Benfeitoria\Notification\Notifications;
 
 class Email65 extends BaseNotification
 {
-    public $description = "Benfeitoria – Campanha em suspense foi mal sucedida...";
+    public $description = "E-mail 65 - Campanha em suspense foi mal sucedida...";
 
     public function getNotification(): string
     {
