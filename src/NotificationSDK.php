@@ -59,7 +59,7 @@ abstract class NotificationSDK
         $requiredFields = $notification->getRequiredFields();
         $data = $notification->getData();
         foreach ($requiredFields as $requiredField)
-            if(!isset($data[$requiredField])) return false;
+            if(!array_key_exists($requiredField,$data)) return false;
 
         return true;
     }
