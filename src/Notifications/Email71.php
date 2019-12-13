@@ -19,7 +19,7 @@ class Email71 extends BaseNotification
             "projects_id",
             "projects_title",
             "owner_name",
-            "projects_withdrawl_value"
+            "projects_transfer_value"
         ];
     }
 }
