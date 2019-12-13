@@ -6,7 +6,7 @@ namespace Benfeitoria\Notification\Notifications;
 
 class Email69 extends BaseNotification
 {
-    public $description = "E-mail 69 - Antecipação realizada com Sucesso";
+    public $description = "E-mail 69 - FALHA na Antecipação.";
 
     public function getNotification(): string
     {
