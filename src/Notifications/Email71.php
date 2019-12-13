@@ -4,13 +4,13 @@
 namespace Benfeitoria\Notification\Notifications;
 
 
-class Email70 extends BaseNotification
+class Email71 extends BaseNotification
 {
-    public $description = "E-mail 70 - Saque Realizado com Sucesso.";
+    public $description = "E-mail 71 - Saque Realizado com Sucesso.";
 
     public function getNotification(): string
     {
-        return "email/70";
+        return "email/71";
     }
 
     public function getRequiredFields(): array
@@ -18,7 +18,7 @@ class Email70 extends BaseNotification
         return [
             "projects_id",
             "projects_title",
-            "projects_pagarme_recipient_id",
+            "owner_name",
             "projects_withdrawl_value"
         ];
     }
