@@ -21,7 +21,7 @@ class Email67 extends BaseNotification
             "projects_pagarme_recipient_id",
             "projects_anticipation_withdraw_value",
             "projects_anticipation_date",
-            "projects_withdrawl_date",
+            "projects_withdraw_date",
             "projects_bank_accounts_bank",
             "projects_bank_accounts_office",
             "projects_bank_accounts_account",
