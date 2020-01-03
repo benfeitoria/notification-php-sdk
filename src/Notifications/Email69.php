@@ -20,7 +20,7 @@ class Email69 extends BaseNotification
             "projects_title",
             "transfer_gateway_response",
             "projects_transfer_value",
-            "projects_withdrawl_date_limit"        
+            "projects_withdraw_date_limit"
         ];
     }
 }
