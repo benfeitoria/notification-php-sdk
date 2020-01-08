@@ -30,7 +30,8 @@ class Email30_1 extends BaseNotification
             "projects_dt_end",
             "contributions_value",
             "contributions_value_benfeitoria",
-            "owner_email"
+            "owner_email",
+            "installments"
         ];
     }
 }
