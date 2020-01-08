@@ -19,6 +19,7 @@ class Email71 extends BaseNotification
             "projects_id",
             "projects_title",
             "owner_name",
+            "owner_email",
             "projects_transfer_value",
             "projects_bank_accounts_bank",
             "projects_bank_accounts_office",
