@@ -32,7 +32,8 @@ class Email34 extends BaseNotification
             "projects_title",
             "projects_short_url",
             "projects_count_contributors",
-            "owner_email"
+            "owner_email",
+            "projects_total_collected"
         ];
     }
 }
