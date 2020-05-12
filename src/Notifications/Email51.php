@@ -8,7 +8,11 @@
 
 namespace Benfeitoria\Notification\Notifications;
 
-
+/**
+ * Class Email51
+ * @package Benfeitoria\Notification\Notifications
+ * @deprecated since 12/05/2020
+ */
 class Email51 extends BaseNotification
 {
     public $description = "E-mail 51 -  Enviado para consultoria quando temos uma nova proposta cadastrada;";
