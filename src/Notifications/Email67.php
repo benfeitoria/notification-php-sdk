@@ -3,7 +3,11 @@
 
 namespace Benfeitoria\Notification\Notifications;
 
-
+/**
+ * Class Email67
+ * @package Benfeitoria\Notification\Notifications
+ * @deprecated since 12/05/2020
+ */
 class Email67 extends BaseNotification
 {
     public $description = "E-mail 67 - Pagamento Antecipação e Saque Realizado com Sucesso.";
