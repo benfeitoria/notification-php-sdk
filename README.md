@@ -16,6 +16,8 @@ compoer require benfeitoria/notification-php-sdk
 Crie um service na aplicação PHP que utilizará o SDK extendendo a classe **\Benfeitoria\Notification\NotificationSDK**:
 
 ```php
+<?php
+
 use Benfeitoria\Notification\NotificationSDK;
 
 class NotificationService extends NotificationSDK
@@ -33,11 +35,14 @@ class NotificationService extends NotificationSDK
         );
     }
 }
+
 ```
 
 Uma vez que o service estiver criado basta referenciar a classe de notificação que deseja disparar:
 
 ```php
+<?php
+
 app(NotificationService::class)->send(
     new Benfeitoria\Notification\Notifications\Email10($data)
 );
