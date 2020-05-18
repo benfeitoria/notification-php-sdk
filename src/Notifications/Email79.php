@@ -36,7 +36,10 @@ class Email79 extends BaseNotification
             "projects_bank_accounts_account",
             "projects_bank_accounts_document_type",
             "projects_bank_accounts_document_number",
-            "projects_bank_accounts_legal_name"
+            "projects_bank_accounts_legal_name",
+            // Attachments data
+            "attachment_csv",
+            "attachment_xlsx"
         ];
     }
 }
