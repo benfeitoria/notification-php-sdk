@@ -2,7 +2,11 @@
 
 namespace Benfeitoria\Notification\Notifications;
 
-
+/**
+ * Class Email75
+ * @package Benfeitoria\Notification\Notifications
+ * @deprecated since 18/05/2020
+ */
 class Email75 extends BaseNotification
 {
     public $description = "E-mail 75 - Campanha FLEX foi publicada.";
