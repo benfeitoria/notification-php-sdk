@@ -15,7 +15,7 @@ compoer require benfeitoria/notification-php-sdk
 
 Registre o **\Benfeitoria\Notification\Services\NotificationService** em sua aplicação.
 
-Após o registro basta referenciar a classe de notificação que deseja disparar a partir do método construtor:
+Após o registro basta referenciar a classe de notificação que deseja disparar a partir do método **send()**:
 
 ```php
 <?php
