@@ -1,46 +1,37 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: j
- * Date: 10/06/19
- * Time: 13:58
- */
 
 namespace Benfeitoria\Notification\Http;
 
-
-use Psr\Http\Message\UriInterface;
-
 class Client extends \GuzzleHttp\Client
 {
-    private $endpoint;
+    private $requestOptions = [
+        'headers' => [
+            'Accept' => 'application/json',
+            'Authorization' => ''
+        ]
+    ];
 
-    /**
-     * Client constructor.
-     * @param $endpoint
-     */
-    public function __construct($endpoint)
+    public function __construct(string $endpoint, string $accessToken)
     {
-        parent::__construct([]);
-        $this->endpoint = $endpoint;
+        $this->requestOptions['headers']['Authorization'] = "Bearer {$accessToken}";
+        parent::__construct(['base_uri' => $endpoint]);
     }
 
-    public function request($method, $uri = '', array $options = [])
+    public function request($method, $uri = '', $options = [])
     {
-        return parent::request($method, $this->endpoint.$uri, $options);
+        $options = array_merge($this->requestOptions, $options);
+        $response = parent::request($method, $uri, $options);
+
+        return json_decode($response->getBody(), true);
     }
 
     public function post($uri, array $options = [])
     {
-        return $this->request("POST",$uri, $options);
+        return $this->request("POST", $uri, $options);
     }
 
     public function get($uri, array $options = [])
     {
-        return $this->request("GET",$uri, $options);
-    }
-
-    public function redirect($uri){
-        return $this->endpoint.$uri;
+        return $this->request("GET", $uri, $options);
     }
 }
