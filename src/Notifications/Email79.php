@@ -25,11 +25,14 @@ class Email79 extends BaseNotification
             "owner_email",
             // Project data
             "projects_title",
-            "projects_total_baked",
-            "projects_total_bakers",
+            "projects_total_backed",
+            "projects_total_backers",
             "projects_date_end",
             "projects_date_withdraw",
             "projects_transfer_value",
+            // Tax data
+            "projects_tax_gateway",
+            "projects_tax_payw",
             // Bank data
             "projects_bank_accounts_bank",
             "projects_bank_accounts_office",
@@ -38,8 +41,8 @@ class Email79 extends BaseNotification
             "projects_bank_accounts_document_number",
             "projects_bank_accounts_legal_name",
             // Attachments data
-            "attachment_csv",
-            "attachment_xlsx"
+            "link_csv",
+            "link_xlsx"
         ];
     }
 }
