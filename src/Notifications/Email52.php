@@ -11,7 +11,7 @@ namespace Benfeitoria\Notification\Notifications;
 /**
  * Class Email52
  * @package Benfeitoria\Notification\Notifications
- * @deprecated since 12/05/2020
+ *
  */
 class Email52 extends BaseNotification
 {
