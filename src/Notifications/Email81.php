@@ -23,6 +23,7 @@ class Email81 extends BaseNotification
             "owner_email",
             "projects_title",
             "projects_id",
+            "consultant_name",
             "messages_content"
         ];
     }
