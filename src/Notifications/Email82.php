@@ -4,7 +4,7 @@ namespace Benfeitoria\Notification\Notifications;
 
 class Email82 extends BaseNotification
 {
-    public $description = "E-mail 82 - Uma campanha publicada enviou uma mensagem! =D";
+    public $description = "E-mail 82 - Uma campanha está aguardando aprovação";
 
     /**
      * @return string
