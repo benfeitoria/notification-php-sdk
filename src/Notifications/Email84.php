@@ -20,6 +20,7 @@ class Email84 extends BaseNotification
     public function getRequiredFields(): array
     {
         return [
+            "subject",
             "message",
             "url",
             "to_email"
