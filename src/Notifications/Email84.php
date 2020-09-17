@@ -21,7 +21,8 @@ class Email84 extends BaseNotification
     {
         return [
             "message",
-            "url"
+            "url",
+            "to_email"
         ];
     }
 }
