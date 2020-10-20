@@ -4,7 +4,7 @@ namespace Benfeitoria\Notification\Notifications;
 
 class Email84 extends BaseNotification
 {
-    public $description = "E-mail 84 - Email genérico com mensagem mais link para CTA";
+    public $description = "E-mail 84 - Email genérico incluindo mensagem";
 
     /**
      * @return string
@@ -22,7 +22,6 @@ class Email84 extends BaseNotification
         return [
             "subject",
             "message",
-            "url",
             "to_email"
         ];
     }
