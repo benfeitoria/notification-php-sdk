@@ -11,11 +11,5 @@
         "psr-4": {
             "Benfeitoria\\Notification\\": "src/"
         }
-    },
-    "authors": [
-        {
-            "name": "Jorge Junior",
-            "email": "jorge.junior.568@live.com"
-        }
-    ]
+    }
 }
