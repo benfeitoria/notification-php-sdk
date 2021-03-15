@@ -21,7 +21,6 @@ class Email86 extends BaseNotification
     {
         return [
             "owner_email",
-            "owner_name",
             "projects_title"
         ];
     }
