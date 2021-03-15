@@ -2,9 +2,9 @@
 
 namespace Benfeitoria\Notification\Notifications;
 
-class Email86 extends BaseNotification
+class Email87 extends BaseNotification
 {
-    public $description = "E-mail 86 - E-mail para os realizadores de campanhas recorrentes com uma pesquisa no pós campanha";
+    public $description = "E-mail 87 - E-mail para os realizadores de campanhas pontuais bem sucedidas com uma pesquisa no pós campanha";
 
     /**
      * @return string
@@ -21,6 +21,7 @@ class Email86 extends BaseNotification
     {
         return [
             "owner_email",
+            "owner_name",
             "projects_title"
         ];
     }
