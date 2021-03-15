@@ -11,7 +11,7 @@ class Email87 extends BaseNotification
      */
     public function getNotification(): string
     {
-        return "email/86";
+        return "email/87";
     }
 
     /**
