@@ -21,7 +21,6 @@ class Email80 extends BaseNotification
     {
         return [
             // User data
-            "user_name",
             "user_email",
             // Password reset data
             "password_reset_url"
