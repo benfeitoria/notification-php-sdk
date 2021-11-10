@@ -22,6 +22,7 @@ class Email82 extends BaseNotification
         return [
             "owner_name",
             "projects_title",
+            "projects_id"
         ];
     }
 }
