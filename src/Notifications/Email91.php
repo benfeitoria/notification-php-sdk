@@ -4,7 +4,7 @@ namespace Benfeitoria\Notification\Notifications;
 
 class Email91 extends BaseNotification
 {
-    public $description = "E-mail Email91 - Disparado quando usuários precisam trocar informações entre si a respeito de alguma campaha ou recompensa por exemplo.";
+    public $description = "E-mail Email 91 - Disparado quando usuários precisam trocar informações entre si a respeito de alguma campaha ou recompensa por exemplo.";
 
     /**
      * @return string
