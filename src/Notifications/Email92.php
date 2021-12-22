@@ -4,7 +4,7 @@ namespace Benfeitoria\Notification\Notifications;
 
 class Email92 extends BaseNotification
 {
-    public $description = "E-mail Email92 - Disparado após usuários iniciarem um contato utilizando a ferramenta de mensagem";
+    public $description = "E-mail Email 92 - Disparado após usuários iniciarem um contato utilizando a ferramenta de mensagem";
 
     /**
      * @return string
