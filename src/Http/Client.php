@@ -2,6 +2,8 @@
 
 namespace Benfeitoria\Notification\Http;
 
+use Psr\Http\Message\ResponseInterface;
+
 class Client extends \GuzzleHttp\Client
 {
     private $requestOptions = [
@@ -17,21 +19,29 @@ class Client extends \GuzzleHttp\Client
         parent::__construct(['base_uri' => $endpoint]);
     }
 
-    public function request($method, $uri = '', $options = [])
+    public function request(string $method, $uri = '', array $options = []): ResponseInterface
     {
         $options = array_merge($this->requestOptions, $options);
-        $response = parent::request($method, $uri, $options);
 
+        return parent::request($method, $uri, $options);
+    }
+
+    private function toArray(ResponseInterface $response)
+    {
         return json_decode($response->getBody(), true);
     }
 
     public function post($uri, array $options = [])
     {
-        return $this->request("POST", $uri, $options);
+        $response = $this->request("POST", $uri, $options);
+
+        return $this->toArray($response);
     }
 
     public function get($uri, array $options = [])
     {
-        return $this->request("GET", $uri, $options);
+        $response = $this->request("GET", $uri, $options);
+
+        return $this->toArray($response);
     }
 }
