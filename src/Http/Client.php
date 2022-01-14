@@ -25,23 +25,4 @@ class Client extends \GuzzleHttp\Client
 
         return parent::request($method, $uri, $options);
     }
-
-    private function toArray(ResponseInterface $response)
-    {
-        return json_decode($response->getBody(), true);
-    }
-
-    public function post($uri, array $options = [])
-    {
-        $response = $this->request("POST", $uri, $options);
-
-        return $this->toArray($response);
-    }
-
-    public function get($uri, array $options = [])
-    {
-        $response = $this->request("GET", $uri, $options);
-
-        return $this->toArray($response);
-    }
 }

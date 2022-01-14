@@ -5,6 +5,7 @@ namespace Benfeitoria\Notification;
 use Benfeitoria\Notification\Contracts\Notification;
 use Benfeitoria\Notification\Exceptions\NotificationMissingRequiredFieldsException;
 use Benfeitoria\Notification\Http\Client;
+use Psr\Http\Message\ResponseInterface;
 
 abstract class NotificationSDK
 {
@@ -44,39 +45,38 @@ abstract class NotificationSDK
         return true;
     }
 
-    /**
-     * @param Notification $notification
-     * @return mixed|\Psr\Http\Message\ResponseInterface
-     * @throws NotificationMissingRequiredFieldsException
-     */
     public function send(Notification $notification)
     {
         if (!$this->validate($notification)) {
             throw new NotificationMissingRequiredFieldsException();
         } else {
-            return $this->http->post('/api/notify', [
+            $response = $this->http->post('/api/notify', [
                 'form_params' => [
                     'environment' => $this->environment,
                     'notification' => $notification->getNotification(),
                     'notification_data' => $notification->getData()
                 ]
             ]);
+
+            return $this->toArray($response);
         }
     }
 
-    /**
-     * @param Notification $notification
-     * @param $recipient
-     * @return mixed|\Psr\Http\Message\ResponseInterface
-     */
     public function checkIfSent(Notification $notification, string $recipient)
     {
-        return $this->http->post('/api/check-if-sent', [
+        $response = $this->http->post('/api/check-if-sent', [
             'form_params' => [
                 'environment' => $this->environment,
                 'notification' => $notification->getNotification(),
                 'recipient' => $recipient
             ],
         ]);
+
+        return $this->toArray($response);
+    }
+
+    private function toArray(ResponseInterface $response)
+    {
+        return json_decode($response->getBody(), true);
     }
 }
