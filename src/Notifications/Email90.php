@@ -25,8 +25,7 @@ class Email90 extends BaseNotification
             "projects_title",
             "projects_short_url",
             "pix_qr_code",
-            "pix_expiration_date",
-            "pix_qr_code_url"
+            "pix_expiration_date"
         ];
     }
 }
