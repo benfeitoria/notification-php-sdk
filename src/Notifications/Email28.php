@@ -22,7 +22,9 @@ class Email28 extends BaseNotification
         return [
             "owner_email",
             "projects_title",
-            "consultant_name"
+            "consultant_name",
+            'total_collected',
+            'admin_project_url'
         ];
     }
 }
