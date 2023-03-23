@@ -4,7 +4,7 @@ namespace Benfeitoria\Notification\Notifications;
 
 class Email79 extends BaseNotification
 {
-    public $description = "E-mail 79 - E-mail disparado para o realizador de projetos bem sucedidos 7 dias após o encerramento da campanha.";
+    public $description = "E-mail 79 - E-mail disparado para o realizador de projetos bem sucedidos, com as instruções para solicitar o saque.";
 
     /**
      * @return string
@@ -30,6 +30,7 @@ class Email79 extends BaseNotification
             "projects_date_end",
             "projects_date_withdraw",
             "projects_transfer_value",
+            "projects_withdraw_awaint_days",
             // Tax data
             "projects_tax_gateway",
             "projects_tax_payw",
