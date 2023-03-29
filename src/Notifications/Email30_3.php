@@ -27,6 +27,7 @@ class Email30_3 extends BaseNotification
             "projects_title",
             "projects_short_url",
             "contributions_value",
+            "contributions_value_benfeitoria",
             "owner_email"
         ];
     }
