@@ -18,7 +18,8 @@ class Email95 extends BaseNotification
         return [
             "projects_title",
             "subscriber_name",
-            "subscriber_email"
+            "subscriber_email",
+            "pix_qr_code"
         ];
     }
 }
